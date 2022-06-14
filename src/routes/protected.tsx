@@ -1,17 +1,12 @@
 import { Suspense } from 'react'
-
 import { Navigate, Outlet } from 'react-router-dom'
-
 
 const App = () => {
   return (
     <>
-      <Suspense>
-      </Suspense>
+      <Suspense></Suspense>
     </>
   )
 }
 
-export const protectedRoutes = [
-  {}
-]
+export const protectedRoutes = [{}]
