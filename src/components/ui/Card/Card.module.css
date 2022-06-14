@@ -1,0 +1,11 @@
+.cardContainer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  padding: 2rem;
+  color: var(--text-base);
+  background: var(--accent-0);
+  border: 0.1rem solid var(--accent-2);
+}
