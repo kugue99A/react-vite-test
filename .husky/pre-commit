@@ -1,1 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
 docker compose run --rm frontend npm run format
