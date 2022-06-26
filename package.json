@@ -9,7 +9,12 @@
     "lint": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
     "stylelint": "stylelint --fix --ignore-path .gitignore \"**/*.css\"",
-    "format": "npm run lint && npm run prettier && npm run stylelint"
+    "format": "npm run lint && npm run prettier && npm run stylelint",
+    "husky": {
+      "hooks": {
+        "pre-commit": "docker compose run --rm frontend yarn lint-staged"
+      }
+    }
   },
   "dependencies": {
     "clsx": "^1.1.1",
