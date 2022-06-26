@@ -6,7 +6,7 @@ export const Users = () => {
   return (
     <>
       <MainLayout>
-        <div>Users</div>
+        <div>Hi, Users</div>
       </MainLayout>
     </>
   )
