@@ -1,0 +1,14 @@
+.menuSidebarWrapper {
+  top: 6rem;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  width: 28rem;
+}
+
+.menuSidebarContainer {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: column;
+}
