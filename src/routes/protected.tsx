@@ -1,12 +1,15 @@
-import { Navigate, Outlet } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 
 import { lazyImport } from '@/utils/lazyImport'
 
 const { Users } = lazyImport(() => import('@/features/users'), 'Users')
-//import { Users } from '@/features/users'
+const { Kartes } = lazyImport(() => import('@/features/kartes'), 'Kartes')
+const { Coucers } = lazyImport(() => import('@/features/cources'), 'Cources')
+const { Records } = lazyImport(() => import('@/features/records'), 'Records')
+const { Disconts } = lazyImport(() => import('@/features/discounts'), 'Disconts')
 
 const App = () => {
-  return <>aaaaaa</>
+  return <>hello world</>
 }
 
 export const protectedRoutes = [
@@ -17,5 +20,9 @@ export const protectedRoutes = [
   {
     path: '/users',
     element: <Users />,
+  },
+  {
+    path: '*',
+    element: <Navigate to="." />,
   },
 ]

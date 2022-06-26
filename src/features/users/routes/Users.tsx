@@ -1,7 +1,13 @@
+import React from 'react'
+
+import { MainLayout } from '@/components/common'
+
 export const Users = () => {
   return (
     <>
-      <div>Hello World</div>
+      <MainLayout>
+        <div>Users</div>
+      </MainLayout>
     </>
   )
 }
