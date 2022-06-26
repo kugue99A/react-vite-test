@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-docker compose run --rm frontend yarn lint-staged
+#docker compose run --rm frontend yarn lint-staged
+yarn lint-staged
