@@ -4,6 +4,8 @@
   left: 0;
   width: 28rem;
   height: 100%;
+  background: var(--base-grad);
+  border-right: 0.1rem solid var(--accent-2);
 }
 
 .menuSidebarContainer {
@@ -11,4 +13,40 @@
   flex-flow: column;
   align-items: start;
   justify-content: start;
+}
+
+
+.menuSidebarContainer ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menuSidebarContainer li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menuSidebarContainer a {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+.nonActiveLink {
+  color: var(--accent-9);
+}
+
+.activeLink {
+  color: var(--secondary);
+  background: var(--accent-4)
 }

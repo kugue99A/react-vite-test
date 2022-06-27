@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import React from 'react'
 
-import { Header } from '@/components/common'
+import { Header, MenuSidebar } from '@/components/common'
 
 import s from './MainLayout.module.css'
 
@@ -13,6 +13,7 @@ const MainLayout: React.VFC<MainLayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
+      <MenuSidebar />
       <main className={clsx(s.layoutContainer)}>{children}</main>
     </>
   )

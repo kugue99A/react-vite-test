@@ -30,8 +30,9 @@
   --accent-7: #333;
   --accent-8: #111;
   --accent-9: #000;
-  --card-radius: 25px;
-  --button-radius: 50px;
+  --base-grad: radial-gradient(ellipse at top left, rgb(255 255 255 / 90%), rgb(255 255 255 / 60%));
+  --card-radius: 2.5rem;
+  --button-radius: 5rem;
   --font-sans: -apple-system, system-ui, blinkmacsystemfont, 'Inter', sans-serif;
 }
 
