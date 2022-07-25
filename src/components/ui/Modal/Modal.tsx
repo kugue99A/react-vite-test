@@ -1,14 +1,15 @@
 import clsx from 'clsx'
-import { ReactNode, VFC } from 'react'
+import { ReactNode, FC } from 'react'
 
 import s from './Modal.module.css'
 
 type ModalProps = {
   children: ReactNode
-  width?: string
+  //width?: string
 }
 
-const Modal: VFC<ModalProps> = ({ children }) => {
+const Modal: FC<ModalProps> = ({ children }) => {
+
   return (
     <>
       <div className={clsx(s.modalWrapper)}>
