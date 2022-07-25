@@ -1,9 +1,9 @@
-import clsx from 'clsx'
+import { Spinner } from '@/components/ui'
 
 export const Cources = () => {
   return (
     <>
-      <div className={clsx()}>Cources</div>
+      <Spinner />
     </>
   )
 }

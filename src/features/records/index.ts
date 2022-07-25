@@ -1,1 +1,1 @@
-export * from './routes/Records'
+export * from './routes'

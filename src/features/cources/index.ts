@@ -1,1 +1,2 @@
-export * from './routes/Cources'
+export * from './types'
+export * from './routes'

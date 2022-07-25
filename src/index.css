@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary: #fff;
   --secondary: #f9fafb;
@@ -129,12 +133,9 @@ p {
 }
 
 a {
-  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
-}
-
-li {
-  margin: 1rem;
   font-size: 1.6rem;
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+  text-decoration: none;
 }
 
 .animated {

@@ -2,19 +2,26 @@ import { Suspense } from 'react'
 import { Navigate, Outlet } from 'react-router-dom'
 
 import { MainLayout } from '@/components/common'
+import { Spinner } from '@/components/ui'
 import { lazyImport } from '@/utils/lazyImport'
 
 const { UsersRoutes } = lazyImport(() => import('@/features/users'), 'UsersRoutes')
-const { Kartes } = lazyImport(() => import('@/features/kartes'), 'Kartes')
-const { Cources } = lazyImport(() => import('@/features/cources'), 'Cources')
-const { Records } = lazyImport(() => import('@/features/records'), 'Records')
-const { Discounts } = lazyImport(() => import('@/features/discounts'), 'Discounts')
+const { KartesRoutes } = lazyImport(() => import('@/features/kartes'), 'KartesRoutes')
+const { CourcesRoutes } = lazyImport(() => import('@/features/cources'), 'CourcesRoutes')
+const { RecordsRoutes } = lazyImport(() => import('@/features/records'), 'RecordsRoutes')
+const { DiscountsRoutes } = lazyImport(() => import('@/features/discounts'), 'DiscountsRoutes')
 
 const App = () => {
   return (
     <>
       <MainLayout>
-        <Suspense fallback={<div>aaaaa</div>}>
+        <Suspense
+          fallback={
+            <div>
+              <Spinner />
+            </div>
+          }
+        >
           <Outlet />
         </Suspense>
       </MainLayout>
@@ -32,20 +39,20 @@ export const protectedRoutes = [
         element: <UsersRoutes />,
       },
       {
-        path: 'discounts',
-        element: <Discounts />,
+        path: 'discounts/*',
+        element: <DiscountsRoutes />,
       },
       {
         path: 'records',
-        element: <Records />,
+        element: <RecordsRoutes />,
       },
       {
-        path: 'kartes',
-        element: <Kartes />,
+        path: 'kartes/*',
+        element: <KartesRoutes />,
       },
       {
-        path: 'cources',
-        element: <Cources />,
+        path: 'cources/*',
+        element: <CourcesRoutes />,
       },
       {
         path: '*',

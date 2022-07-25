@@ -7,9 +7,10 @@ const MenuSidebar = () => {
   const LinkList = [
     { id: 1, url: '/', title: 'ホーム' },
     { id: 2, url: '/users', title: '患者一覧' },
-    { id: 3, url: '/records', title: '来客記録' },
-    { id: 4, url: '/cources', title: 'コース一覧' },
-    { id: 5, url: '/discounts', title: '割引一覧' },
+    { id: 3, url: '/kartes', title: 'カルテ一覧' },
+    { id: 4, url: '/records', title: '来客記録' },
+    { id: 5, url: '/cources', title: 'コース一覧' },
+    { id: 6, url: '/discounts', title: '割引一覧' },
   ]
   return (
     <>

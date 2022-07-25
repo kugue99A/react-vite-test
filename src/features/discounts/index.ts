@@ -1,1 +1,2 @@
-export * from './routes/Discounts'
+export * from './types'
+export * from './routes'

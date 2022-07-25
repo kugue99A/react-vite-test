@@ -1,0 +1,16 @@
+.root {
+  font-size: 1.4rem;
+}
+
+.root input{
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid var(--accent-2);
+}
+
+.root input:focus {
+  border: 0.1rem solid var(--selection);
+  outline: 0;
+}

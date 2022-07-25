@@ -14,7 +14,9 @@ const MainLayout: React.VFC<MainLayoutProps> = ({ children }) => {
     <>
       <Header />
       <MenuSidebar />
-      <main className={clsx(s.layoutContainer)}>{children}</main>
+      <main className={clsx(s.layoutContainer)}>
+        <div className={clsx(s.layoutContent)}>{children}</div>
+      </main>
     </>
   )
 }
