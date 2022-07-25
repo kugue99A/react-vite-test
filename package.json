@@ -8,10 +8,12 @@
     "preview": "vite preview",
     "lint": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
-    "stylelint": "stylelint --fix --ignore-path .gitignore \"**/*.css\""
+    "stylelint": "stylelint --fix --ignore-path .gitignore \"**/*.css\"",
+    "format": "npm run lint ; npm run prettier ; npm run stylelint"
   },
   "dependencies": {
     "clsx": "^1.1.1",
+    "dayjs": "^1.11.3",
     "path": "^0.12.7",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -19,11 +21,13 @@
     "stylelint-config-prettier": "^9.0.3"
   },
   "devDependencies": {
+    "@stylelint/postcss-css-in-js": "^0.38.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "@vitejs/plugin-react": "^1.3.0",
+    "autoprefixer": "^10.4.7",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^2.7.1",
@@ -34,10 +38,14 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-testing-library": "^5.5.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "postcss": "^8.4.14",
     "prettier": "^2.7.0",
     "stylelint": "^14.9.1",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard": "^26.0.0",
+    "tailwindcss": "^3.1.6",
     "typescript": "^4.6.3",
     "vite": "^2.9.9"
   }

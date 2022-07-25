@@ -1,9 +1,12 @@
-import Button from '@/components/Button'
+import { AppProvider } from '@/providers/app'
+import { AppRoutes } from '@/routes'
 
-const App = () => {
+function App() {
   return (
     <>
-      <Button>test</Button>
+      <AppProvider>
+        <AppRoutes />
+      </AppProvider>
     </>
   )
 }
