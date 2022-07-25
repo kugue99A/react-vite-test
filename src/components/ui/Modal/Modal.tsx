@@ -1,11 +1,11 @@
 import clsx from 'clsx'
-import { ReactNode, VFC } from 'react'
+import { ReactNode, FC } from 'react'
 
 import s from './Modal.module.css'
 
 type ModalProps = {
   children: ReactNode
-  width?: string
+  //width?: string
 }
 
 const Modal: FC<ModalProps> = ({ children }) => {
