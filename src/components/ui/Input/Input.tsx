@@ -7,7 +7,7 @@ export type InputProps = {
   className?: string
   onChange?: MouseEventHandler<HTMLButtonElement>
   label?: string
-  type?: 'date' | 'password' 
+  type?: 'date' | 'password'
 }
 
 const Input: FC<InputProps> = (props) => {

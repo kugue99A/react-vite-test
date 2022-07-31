@@ -9,7 +9,6 @@ type ModalProps = {
 }
 
 const Modal: FC<ModalProps> = ({ children }) => {
-
   return (
     <>
       <div className={clsx(s.modalWrapper)}>
